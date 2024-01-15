@@ -4,3 +4,8 @@ Scenario: Open the website "bing.com"
 Given the browser is open
 When the website address "bing.com" is entered
 Then the website "bing.com" is open
+
+Scenario: Phrase search
+Given the "bing.com" homepage is displayed
+When the search phrase "Prowly Media Monitoring" is entered
+Then the results page shows links related to "Prowly Media Monitoring"
