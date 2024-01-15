@@ -1,0 +1,6 @@
+Feature: Use Copilot on the "bing.com" website to collect information about the media monitoring module in Prowly.
+
+Scenario: Launch Copilot
+Given the "bing.com" homepage is displayed
+When the Chat is selected
+Then the Copilot page is displayed
