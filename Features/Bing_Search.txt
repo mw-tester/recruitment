@@ -9,3 +9,16 @@ Scenario: Phrase search
 Given the "bing.com" homepage is displayed
 When the search phrase "Prowly Media Monitoring" is entered
 Then the results page shows links related to "Prowly Media Monitoring"
+
+Scenario Outline: Filtering search results
+Given the results page shows links related to "Prowly Media Monitoring"
+When the <filter> is selected
+Then the results page shows <filter> links related to "Prowly Media Monitoring"
+Examples:
+|filter		|
+|Wyszukaj	|
+|Obrazy		|
+|Wideo		|
+|Mapy		|
+|Wiadomości	|
+|Zakupu		|
