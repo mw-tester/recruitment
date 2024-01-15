@@ -4,3 +4,13 @@ Scenario: Launch Copilot
 Given the "bing.com" homepage is displayed
 When the Chat is selected
 Then the Copilot page is displayed
+
+Scenario: Collect information
+Given the Copilot page is displayed
+And the text field is active
+And the text field is empty
+When the text "<question>" is entered
+Then the answer is received
+Examples:
+|question														|
+|collect information about the media monitoring module in Prowly|
