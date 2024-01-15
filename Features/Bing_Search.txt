@@ -1,0 +1,6 @@
+Feature: Search for the phrase "Prowly Media Monitoring" on the "bing.com" website with filtering by content category.
+
+Scenario: Open the website "bing.com"
+Given the browser is open
+When the website address "bing.com" is entered
+Then the website "bing.com" is open
